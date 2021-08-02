@@ -1,0 +1,164 @@
+.prod-region-tall{    
+    .slick-arrow{
+        top: 35%;
+    }
+    
+    .prod-region-tall-item{
+        border: 1px solid #e4e4e4;
+        padding: .5rem;
+        margin: .25rem;
+        border-radius: 5px;
+        position: relative;
+        background-color: #fff;
+        
+        
+        
+        .pr-title{
+            @include openSansBold;
+            text-align: center;
+            margin-bottom: .5rem;
+            display: block;
+            min-height: 45px;
+        }
+        
+        .pr-freebie-c{
+            min-height: 32px;
+            text-align: center;
+            .pr-freebie{
+                text-align: center;
+                color: red;
+                text-transform: uppercase;
+                @include openSansBold;
+            }
+        }
+        
+        .pr-img-container{
+            position: relative;
+            
+            .pr-overlay{
+                position: absolute;
+                top: 10px;
+                right: 0;
+                width: 60px;
+            }
+            .pr-img{max-width: 75%; margin: 0 auto;
+                
+                
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    max-width: 100%;
+                }
+            }
+        }
+        
+        .pr-stock-msg{
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            @include openSansBold;
+            font-size: 1rem;
+        }
+        .pr-stock-in{color: #1ca902;}
+        .pr-stock-pre{color: orange; 
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                font-size: .875rem;
+            }
+        }
+        .pr-stock-out{color: red;}
+        
+        
+        .pr-was-save-container{
+            min-height: 35px;
+            text-align: center;
+            
+            .pr-was{
+                @include openSansRegular;
+                text-decoration: line-through;
+            }
+            
+            .pr-saving-container{
+                .pr-saving{
+                    @include openSansBold;
+                    color: red;
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+        
+        .pr-ex{
+            @include flexCenter;
+            text-align: center;
+            @include oswaldBold;
+            font-size: 1.75rem;
+            
+            > span{
+                display: flex;
+                flex-direction: column;
+                margin-left: .2rem;
+            }
+            
+            span{
+                @include oswaldBold;
+                text-transform: uppercase;
+            }
+            
+        }
+        .pr-inc{
+            display: block;
+            @include openSansRegular;
+            text-align: center;
+        }
+        
+        .pr-shop, .pr-shop-btn-info, .pr-shop-btn-in, .pr-shop-btn-pre{
+            color: #fff;
+            text-transform: uppercase;
+            @include openSansBold;
+            display: block;
+            text-align: center;
+            font-size: .75rem;
+            padding: .5rem 0rem;
+            border-radius: 3px;
+            margin: .25rem 0;
+        }
+        
+        .pr-shop{background-color: #0081b9;}
+        .pr-shop-btn-info{background-color: #1ca902; color: #fff;}
+        .pr-shop-btn-in{background-color: #1ca902;}
+        .pr-shop-btn-pre{background-color: orange;}   
+
+        .pr-oos-container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffffd9;
+
+            h3{
+                color: red;
+                font-size: 2rem;
+                font-weight: 700;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+
+@media (min-width: $mobileSmall) and (max-width: $mobile) {
+    .prod-region-tall-m{
+        display: none;
+        float: none;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .ui-accordion-header{
+        @include openSansBold;
+        margin-bottom: .5rem;
+    }
+
+}

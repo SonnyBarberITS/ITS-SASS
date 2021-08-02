@@ -1,0 +1,50 @@
+#kitBuilder{
+
+    .thumbnail{
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: .2rem;
+    }
+
+    h2{
+        margin-top: 2rem;
+        @include oswaldBold;
+        text-transform: uppercase;
+        color: #252525;
+    }
+
+
+    h4{
+        @include montserratDemi;
+        font-size: 1.2rem;
+    }
+
+    p, li, a{
+        @include montserratMedium;
+        font-size: .75rem;
+    }
+
+    li{
+        list-style: disc;
+    margin-bottom: 5px;
+    }
+
+
+
+    .desktopC{
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    .mobileC{
+        display: none;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            display: block;
+        }
+    }
+
+    
+
+}

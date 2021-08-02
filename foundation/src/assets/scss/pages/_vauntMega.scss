@@ -1,0 +1,81 @@
+#promotions.vaunt-mega-deals{
+    background-image: url('https://its-london.s3-eu-west-1.amazonaws.com/themes/VAUNTMEGAWEEK/2021-Q2/background.png');
+    background-size: contain;
+    background-attachment: fixed;
+    padding-top: 0;
+
+    .desktopImg, .mobileImg{
+        margin-bottom: 2rem;
+    }
+
+    h2.intro-title{
+        color: #ffee00;
+        font-size: 3rem;
+        @include oswaldBold;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 2rem;
+        }
+    }
+
+    .promo-item{
+        position: relative;
+        background-color: #FF6B01;
+        border: none;
+        h2, h5{color: #000;}
+        .ShopBtn{border: none;} 
+
+        .coming-soon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #ff6b01cf;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                @include oswaldBold;
+                text-transform: uppercase;
+                transform: rotate(-45deg);
+                font-size: 3em;
+                text-align: center;
+            }
+        }
+    }
+
+    .promo-banner{
+        margin-bottom: 1rem;
+    }
+
+
+    .prod-region-tall{
+        width: 100%;
+        .prod-region-tall-item{
+            background-color: #fff;
+            
+            
+            
+            .pr-freebie-c{
+                text-align: center;
+            }
+            
+            .pr-img-container{
+                text-align: center;
+            }
+        }
+    }
+
+    #shop-all-large{
+        background-color: #FF6B01;
+        @include oswaldBold;
+        color: #000;
+        font-size: 2.5rem;
+        border-radius: 5px;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+#flash{
+    background-image:url(https://its-london.s3-eu-west-1.amazonaws.com/themes/FLASHDEALS/background.jpg);
+    background-position: center;
+    background-size: contain;
+
+
+
+
+    margin: 0 !important;
+    padding-bottom: 2rem;
+
+    h2{
+        font-family: 'Kanit', Arial, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #323232;
+        font-size: 5rem;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 2rem;
+        }
+    }
+
+    h3, h5{
+        font-family: 'Kanit', Arial, sans-serif;
+        font-weight: 600;
+        color: #323232;
+    }
+
+    h3{
+        font-size: 3rem;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 1.5rem;
+        }
+    }
+
+    hr{
+        border-bottom: 4px solid #e9be34;
+    }
+
+    #header{
+        margin-bottom: 3rem;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .button{
+        font-family: 'Kanit', Arial, sans-serif;
+        font-weight: 700;
+        color: #fff;
+        background: #1ca902;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 40px;
+        padding: 1.3rem 2rem;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+        font-size: 25px;
+        padding: 1rem 1rem;
+        }
+    }
+
+
+    .promo-banners{
+        margin: 2rem auto;
+        .cell{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .hierarchy-lvls{
+        h5{
+            font-family: 'Kanit', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            margin-bottom: 2rem;
+        }
+
+        .thumbnail{
+            border-color: #ecab00;
+            box-shadow: none;
+        }
+    }
+
+    .fd21-highilights{
+        .flashDeals-image{
+            max-width: 100% !important;
+            width: 100%;
+
+            .flashDeals__overlay{
+                top: -10px !important;
+                right: 5px !important;
+                width: 80px !important;
+
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    width: 50px !important;
+                    }
+            }
+        }
+    }
+
+}

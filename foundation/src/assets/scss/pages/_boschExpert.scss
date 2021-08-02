@@ -1,0 +1,92 @@
+#bosch-expert{
+    h1, h2{
+        @include openSansExtraBold;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #003D6C;
+
+        strong{
+            @include openSansExtraBold;
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: #DF0715;
+        }
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 1.5rem;
+            strong{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    h5{
+        @include openSansExtraBold;
+        text-transform: uppercase;
+        color: #003D6C;
+    }
+
+    h2{
+        margin-bottom: 2rem;
+    }
+
+    p{
+        @include openSansRegular;
+        font-size: 1.2rem;
+
+        strong{
+            @include openSansBold;
+            font-size: 1.2rem;
+            color: #003D6C;
+        }
+    }
+
+    .categories{
+        background-color: #F3F3F3;
+
+        .category-item{
+            border: 1px dashed #007cdc;
+            padding: 1rem;
+            margin-bottom: 1rem;
+
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                padding: .5rem;
+            }
+        }
+
+        .button{
+            border-color: #003D6C;
+            color: #003D6C;
+            @include openSansRegular;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        h5{
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        h5::before{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            content: '\f054';
+            margin-right: 1rem;
+            color: #DF0715;
+            font-size: .75rem;
+
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                margin-right: .5rem;
+            }
+        }
+
+        .snippet{
+            font-size: .9rem;
+            color: #003D6C;
+        }
+    }
+
+    .grid-container{
+        padding: 2rem .5rem;
+    }
+}

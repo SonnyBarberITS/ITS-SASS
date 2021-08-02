@@ -1,0 +1,305 @@
+#promotions.outlet{
+    padding-top: 0;
+    background-image: url('https://its-london.s3-eu-west-1.amazonaws.com/outlet/background.jpg');
+    background-attachment: fixed;
+
+    > .grid-container{
+        background-color: #aa9c75bf;
+    }
+
+    h1{
+        color: #000;
+        margin-bottom: 0;
+        @include oswaldBold;
+        margin-top: 2rem;
+
+        
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 3rem; 
+        }
+    }
+
+    h2{
+        @include openSansExtraBold;
+    }
+
+    p{
+        @include openSansBold;
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+
+    .promo-item{
+        border-radius: 5px;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            padding: 1px !important; 
+        }
+    }
+
+    .product-region-heading{
+        @include oswaldBold;
+        font-size: 2.5rem;
+        color: #000;
+    }
+
+    .product-region{
+        .prod-region-tall-item{
+            background-color: #fff;
+        }
+    }
+
+    #shop-all-large{
+        @include oswaldBold;
+        font-size: 2rem;
+        background: #1ca902;
+        text-transform: uppercase;
+        border-radius: 5px;
+        color: #fff;
+    }
+    
+
+    .slick-prev{
+        left: 0;
+    }
+    .slick-next{
+        right: 0;
+    }
+}
+
+.hierarchyLvl.outlet-hierarchy-lvl{
+    background-image: url('https://its-london.s3-eu-west-1.amazonaws.com/outlet/background.jpg');
+    background-attachment: fixed;
+
+    
+
+    .hierarchy-levels-container{
+        padding: 2rem 0;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            padding: .5rem; 
+        }
+    }
+
+
+    h3{
+        @include oswaldBold;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    
+}
+
+
+.outlet-shop-its{
+    background-color: #000;
+    padding-top: .5rem;
+    width: 100%;
+
+    .cell{
+        text-align: center;
+
+        h4{
+            color: #feed00;
+            @include oswaldBold;
+            text-transform: uppercase;
+        }
+        p{
+            color: #fff;
+            @include montserratMedium;
+            font-size: 1rem;
+        }
+        a.button{
+            background-color: #feed00;
+            color: #000;
+            @include oswaldBold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+// Outlet Strip
+.outlet-strip{
+    background-color: #afa174;
+
+    .grid-container{
+        max-width: 990px;
+        padding: 0;
+    }
+
+    img{
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+
+// Outlet back button
+
+.outlet-back-container{
+    padding: 1rem .5rem;
+    align-items: center;
+    margin: 0; 
+
+    a{
+        font-size: 1rem;
+        @include oswaldBold;
+
+        > .fas{
+            margin-right: .5rem;
+        }
+    }
+}
+
+
+// Outlet Product Lsiting page
+
+.plOutletContainer{
+    background-image: url('https://its-london.s3-eu-west-1.amazonaws.com/outlet/background.jpg');
+    background-attachment: fixed;
+    position: relative;
+    @include flexColumnCenter;
+
+
+    #SiteContainerInner{
+        width: 990px;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            width: 100%; 
+        }
+    }
+
+    #Main{
+        background-color: #fff;
+        margin: 1rem 0;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            margin: 0 auto;
+             #CenterColumn{
+                 margin: 0 !important;
+                 padding-top: .5rem;
+             }
+        }
+    }
+
+    .BreadCrumb{
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+
+    .SearchCntrls{
+        padding: .5rem;
+    }
+
+    .paging{
+        .ViewAll{
+            width: 100px;
+        }
+    }
+
+    .EASearchFacetContainer {
+        .NavigationControl{
+            input[type=checkbox]+label{
+                width: 100%;
+            }
+        } 
+    }
+
+   .outlet-back-container{
+        background-color: #feed00;
+        padding: .5rem 1rem;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            margin: 0;
+        }
+    }
+
+    #LeftColumn{
+        background-color: #fff;
+    }
+
+    #CenterColumn{
+        background-color: #fff;
+    }
+
+    .LISTCONTAINER{
+        background-color: #fff;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            padding: .5rem;
+
+            #pdList li{
+                border-top: none;
+                border-bottom: 1px solid #eaeaea;
+            }
+
+            .SHOWGRID, .SHOWLIST{
+                right: .5rem;
+            }
+
+            .displaying{
+                @include oswaldBold;
+            }
+
+            .WebBrand{
+                @include oswaldBold;
+                text-transform: uppercase
+            }
+
+            .desc.h2, .CatRefGridList, .WasPrice > span, .VatInc span{
+                font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+                font-weight: 500;
+                font-size: .75rem
+            }
+
+            .savingBlockM{
+                .savingBlockTextM{
+                    @include oswaldBold;
+                }
+            }
+
+            .VatEx > span{
+                @include oswaldBold;
+            }
+
+            .VatEx .div{
+                @include oswaldBold;
+                font-size: 2rem;
+            }
+
+        }
+    }
+
+    h1.Heading{
+        @include oswaldBold;
+        text-transform: uppercase;
+        font-size: 2rem !important;
+        margin: 1rem 0 0 0;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            hr{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    #ctl00_ccRecentlyViewedProducts{
+        margin: 0rem auto;
+        padding: 1rem 0;
+    }
+
+    #pdList{
+        .ProductHead{
+            text-align: center;
+        }
+    }
+
+    .In.Stock{
+        color: #1ca902;
+    }
+
+    @media (min-width: $mobileSmall) and (max-width: $mobile) {
+        padding: .5rem;
+    }
+
+}

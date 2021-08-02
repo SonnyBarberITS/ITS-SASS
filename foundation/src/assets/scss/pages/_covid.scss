@@ -1,0 +1,53 @@
+#covid{
+    background-color: #f7f7f7;
+    padding: 2rem .5rem;
+
+
+    h1, h2{
+        @include oswaldBold;
+        text-transform: uppercase;
+    }
+
+    h3{
+        @include openSansBold;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+
+    p, li, a, strong{
+        @include openSansRegular;
+        font-size: 1rem;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+    
+    a{
+        text-decoration: underline;
+    }
+
+    strong{
+        font-weight: 700;
+    }
+
+    li{
+        margin-bottom: .5rem;
+    }
+
+    .grid-container{
+        background-color: #fff;
+        padding: 2rem;
+
+        .cell{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .footer{
+        .cell{
+            margin-bottom: 0;
+        }
+    }
+
+}

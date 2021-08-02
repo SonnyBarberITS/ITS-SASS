@@ -1,0 +1,59 @@
+#fathersDay{
+
+    h1, h2{
+        @include oswaldBold;
+        text-transform: uppercase;
+        font-size: 3rem;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+    }
+
+    h2{
+        font-size: 4rem;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+           font-size: 2rem;
+        }
+    }
+
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+    }
+
+    .header{
+        img{
+            width: 100%;
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .thumbnail{
+        box-shadow: none;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    .promo-item{
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    .button{
+        background-color: #ff261f;
+        border-radius: 10px;
+        @include futuraPTHeavy;
+        font-style: oblique;
+        font-size: 2rem;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 1.5rem;
+         }
+    }
+
+}

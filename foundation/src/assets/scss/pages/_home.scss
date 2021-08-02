@@ -1,0 +1,157 @@
+#home{
+
+    h2{
+        @include montserratHeavy;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    hr{
+        max-width: 50%;
+        margin: 0 auto 1rem auto;
+    }
+
+    .button{
+        @include montserratHeavy;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+
+        &:hover{
+            background-color: #fee420;
+            color: #444;
+        }
+    }
+
+
+    .home-brands{
+        margin: 2rem 0;
+        .button{margin-top: 1rem;}
+    }
+
+
+    #home-promo-1, #home-promo-1-col{
+        .thumbnail{
+            margin-bottom: 0;
+            box-shadow: none;
+        }
+    }
+
+
+    #halfPriceRewards{
+        margin-bottom: 2rem;
+
+        > h2{
+            @include oswaldBold;
+            font-size: 3rem;
+            text-transform: uppercase;
+            width: 100%;
+            margin: 0 auto 1rem auto;
+            background-color: #e1081c;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #f6e81d;
+            border-radius: 5px;
+            padding: 40px 0;
+            color: #fff;
+
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                font-size: 2rem;
+                padding: 20px 0;
+            }
+        }
+
+        .cell{
+            border: 1px solid #eaeaea;
+            background-color: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            padding: .5rem;
+
+            .hpr-price-container{
+                @include flexColumnCenter;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background-color: #ef0b16;
+                width: 87px;
+                height: 87px;
+                padding: 5%;
+                border-radius: 50%;
+                z-index: 1;
+                border: 2px solid #fff;
+                box-shadow: 0 0 0 2px #ef0b16;
+
+
+                .hpr-was, .hpr-exVat{
+                    color: #fff;
+                }
+                .hpr-was{
+                    font-size: 1rem; 
+                    text-decoration: line-through;
+                    @include oswaldMedium;
+                }
+
+                .hpr-exVat{
+                    font-size: 1.5rem; 
+                    @include oswaldBold;
+                }
+            }
+
+            .hpr-image{
+                margin-top: 2rem;
+            }
+
+            .hpr-desc{
+                display: block;
+                @include openSansBold;
+                min-height: 40px;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    font-size: .75rem;
+                }
+            }
+
+            .hpr-moreInfo{
+                background-color: #0081B9;
+                margin-bottom: 0;
+
+                &:hover{
+                    color: #fee420;
+                }
+
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    font-size: .75rem;
+                }
+            }
+
+            .hpr-freebie-text{
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: red;
+                color: #fff;
+                padding: 15px 0;
+                font-size: 18px;
+                text-transform: uppercase;
+                @include oswaldBold;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 5px 5px 0 0;
+            }
+
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .trustpilot-widget{
+        margin-bottom: 2rem;
+    }
+}

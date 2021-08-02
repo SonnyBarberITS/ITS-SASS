@@ -1,0 +1,36 @@
+#competition{
+    >.grid-container{
+        padding: 2rem .5rem;
+    } 
+}
+
+#competition.competition-stanley{
+    h1, h2{
+        @include futuraPTCondensedExtraBold;
+        text-transform: uppercase;
+        color: #000;
+        font-style: italic;
+        
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+
+            font-size: 2.3rem;
+        }
+    }
+
+    p{
+        @include openSansRegular;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .button{
+        background-color: #000;
+        border-radius: 3px;
+        @include futuraPTCondensedExtraBold;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+

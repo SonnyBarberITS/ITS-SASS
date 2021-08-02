@@ -1,0 +1,87 @@
+#powerZone{
+
+    h1, h2{
+        @include oswaldBold;
+        text-transform: uppercase;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 2rem;
+        }
+    }
+
+    p, a{
+        @include openSansRegular;
+        font-size: 1rem;
+    }
+
+   .header{
+       background-image: url('https://its-london.s3-eu-west-1.amazonaws.com/themes/POWERZONE/background.jpg');
+       background-size: cover;
+       background-position: center;
+       padding: 5rem .5rem;
+
+       h1{
+           color: #fff;
+       }
+   }
+
+   .pzYellow{
+       background-color: #fee420;
+       padding: 5rem .5rem;
+
+       h2{
+           color: #000;
+       }
+       hr{
+        border-bottom: 1px solid #e2c800;
+       }
+
+       @media (min-width: $mobileSmall) and (max-width: $mobile) {
+        padding: 3rem .5rem;
+    }
+   }
+
+   .pzBricks{
+    background-image: url('https://its-london.s3-eu-west-1.amazonaws.com/themes/POWERZONE/bricksBackground.jpg');
+    padding: 5rem .5rem;
+
+    h2, p{
+        color: #fff;
+    }
+    @media (min-width: $mobileSmall) and (max-width: $mobile) {
+        padding: 3rem .5rem;
+    }
+}
+
+.hours{
+    margin-top: 3rem;
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.phoneNum{
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+.store-item{
+    background-color: #000;
+    h2{
+        color: #fee420;
+    }
+    p, a{
+        color: #fff;
+    }
+
+    .button{   
+        background: #fee420;
+        color: #000;
+        @include oswaldBold;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+}
+
+}

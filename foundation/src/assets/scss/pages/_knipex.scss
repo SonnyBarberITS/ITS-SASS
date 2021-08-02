@@ -1,0 +1,253 @@
+#knipex{
+    h1, h2, h3, h4, h5, h6, p, a, li, span, em{
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    h2{
+        font-weight: 500;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 2rem;
+        }
+    }
+
+    p{
+        font-size: 1.25rem;
+    }
+
+    .slick-prev{
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            left: 0;
+        }
+    }
+
+    .button {
+        background-color: #004f9f;
+        padding: .75rem 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        font-size: 1rem;
+        font-weight: 700;
+        &::after{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            content: '\f054';
+            margin-left: .5rem;
+        }
+    }
+
+    .callout{
+        background-color:#ebecef;
+        border: none;
+        h4{
+            color: #636363;
+        }
+    }
+
+    .intro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        h1{
+            color: #E3070C;
+            @include flexCenter;
+            font-weight: 500;
+
+            span{
+                color: #004f9f;
+                margin-left: .5rem;
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            margin-bottom: 0;
+        }
+    }
+
+    .responsive-embed{
+        margin-bottom: 2rem;
+    }
+
+    .whats-new{
+
+        h2{
+            font-size: 3rem;
+            color: #004f9f;
+        }
+
+        .thumbnail{
+            box-shadow: none;
+            border: none;
+        }
+
+        
+
+        li{
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            &::before{
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900;
+                content: '\f054';
+                margin-right: .5rem;
+            }
+
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                font-size: 1rem;
+            }
+        }
+
+        .product-item{
+            padding: 1rem 0;
+
+            hr{
+                border-bottom: #e30613 solid 2px;
+            }
+
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                h3{
+                    font-size: 2rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .grid-container{
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                padding: 0 .5rem;
+            }
+        }
+
+    }
+
+    .product-region-container{
+        background-color: #f0f0f0;
+        padding: 2rem .5rem;
+
+        .knipex-highlight-prods{
+            margin-bottom: 2rem;
+
+             /* the slides */
+            .slick-slide {
+                margin: 0 20px;
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    margin: 0 5px;
+                }
+            }
+            /* the parent */
+            .slick-list {
+                margin: 0 -20px;
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    margin: 0 -5px;
+                }
+            }
+
+            
+
+            .cell{
+                background-color: #fff;
+                padding: .5rem;
+                border-radius: 5px;
+            }
+
+            .img-container{
+                img{
+                    margin: 0 auto;
+                }
+            }
+            .prod-title{
+                font-weight: 800;
+                font-size: 1rem;
+                color: #646263;
+                margin-bottom: 1rem;
+                display: block;
+                min-height: 40px;
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    min-height: 60px;
+                }
+            }
+        }
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            padding: 1rem .5rem;
+        }
+    }
+
+    .categories-container{
+        padding: 2rem 0;
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+           > .grid-x{
+               padding-left: .5rem;
+               padding-right: .5rem;
+           }
+            p{
+                width: 100%;
+        }
+    }
+}
+
+    .shop-all-btn{
+        background-color: #004f9f;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+
+    .grid-container{
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            padding: 2rem .5rem;
+        }
+    }
+
+    .knipex-workshop{
+        background-color: #f0f0f0;
+        padding: 2rem .5rem;
+
+
+        .videos{
+            button.button{
+                 background: none;
+                 margin-bottom: 0;
+                 padding: 0;
+                 &::after{
+                     content: '';
+                 }
+            }
+
+            .video-button{
+                background-color: #004f9f;
+            }
+    }
+
+    h5{
+        color: #252525;
+    }
+
+    .grid-container{
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            padding: 0rem .5rem;
+        }
+    }
+}
+
+}
+
+
+.knipex-reveal{
+    width: 990px;
+
+
+    @media (min-width: $mobileSmall) and (max-width: $mobile) {
+        width: 90%;
+        min-height: 0;
+        height: auto;
+        margin: auto;
+        padding: 5px;
+    }
+
+
+}

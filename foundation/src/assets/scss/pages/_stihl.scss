@@ -1,0 +1,291 @@
+#stihl{
+
+
+    h1, h2{
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        color: #F17D26;
+        font-weight: 800;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    h3{
+        font-family: 'Josefin Sans', sans-serif;
+        color: #fff;
+    }
+
+    hr{
+        max-width: 150px;
+        margin-top: 0;
+        border-bottom: 4px solid #F17D26;
+    }
+    p, a, li{ 
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    em{
+        color: #fff;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 2rem 0;
+        display: block;
+    }
+
+
+    ul{
+        margin-bottom: 2rem !important;
+    }
+    
+
+    li::before{
+        content: "\2022";  
+        color: #F17D26; 
+        font-weight: bold; 
+        display: inline-block; 
+        width: 1em; 
+        margin-left: -1em; 
+    }
+
+    .button{
+        background-color: #F17D26;
+        color: #fff;
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .stihlCordlessIntro{
+        h1{
+            margin: 0;
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                font-size: 1.75rem;
+                line-height: normal;
+            }
+        }
+        h3{
+            color: #F17D26;
+            margin: 1rem 0;
+        }
+
+        h5{
+            > .fas{
+                color: #C9CF00;
+            }
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    #videoSection{
+        margin: 3rem auto;
+    }
+
+
+    #category-container{
+        margin-bottom: 1rem;
+
+        .cell{
+            margin-bottom: 1rem;
+        }
+    }
+
+
+
+
+    .separator{
+        background-attachment: fixed;
+        background-image: url(https://its-london.s3-eu-west-1.amazonaws.com/themes/STIHL/stihl-range.jpg);
+        height: 35rem;
+        padding: 2rem;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+
+        h2{
+            color: #fff;
+        }
+
+        hr{
+            border-bottom: 4px solid #ffffff;
+            margin: 0 0 2rem 0;
+        }
+
+        .trust-pilot-logo{
+            width: 200px;
+        }
+
+    }
+
+    #products{
+        img{max-width: 100%;}
+        h2{color: #444;}
+        hr{ 
+            margin: 0;
+            border-bottom: 4px solid #444;
+        }
+
+        .product-item{
+            margin: 3rem auto;
+            padding: 1rem;
+
+            >.grid-x{
+                margin: 0 auto;
+                align-items: center;
+            }
+        }
+
+        .product-icon{
+            margin: 1rem 0 2rem 0;
+        }
+
+        .mowers-seperator{
+            height: auto;
+            background-image: url(https://its-london.s3-eu-west-1.amazonaws.com/themes/STIHL/stihl-lawn-mowers.jpg);
+
+
+            h2, p{
+                color: #fff;
+            }
+
+            hr{
+                margin: 0 auto 2rem auto;
+                border-color: #fff;
+            }
+
+            .cell{
+                background-color: #fff;
+                padding: 1rem;
+
+                h3{
+                    color: #444;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                p{
+                    color: #444444;
+                }
+
+                hr{
+                    margin: 0 auto 1rem auto;
+                    border-color: #444444;
+                }
+
+                li{
+                    list-style-type: disc;
+                    list-style-position: inside;
+
+                    &::before{
+                        content: '';
+                    }
+                }
+
+            }
+
+            .button.all-mowers{
+                color: #F17D26;
+                background-color: #fff;
+                margin: 2rem auto;
+            }
+        }
+
+        .product-item-mowers{
+            h4{font-weight: 700;}
+            li{font-size: 1.5rem;}
+        }
+    }
+
+
+    .stihl-ranges{
+        padding: 1rem 0 2rem 0;
+
+        .container-cell{padding-left: 1rem; margin-top: 1rem; margin-bottom: 1rem;
+            h4{
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: .2rem;
+            }
+            hr{
+                margin: 0 0 1rem 0;
+                max-width: 1.7rem;
+                border-color: #444444;
+            }
+            h6{font-weight: 600;}
+            p{font-size: .9rem;}
+        
+        }
+        .as-cell{border-left: 4px solid #C9CF00;}
+        .ak-cell{border-left: 4px solid #f3be4c;}
+        .ai-cell{border-left: 4px solid #95B5DE;}
+        .ap-cell{border-left: 4px solid #80807E;}
+
+        .button{
+            margin-top: 2rem;
+        }
+       
+    }
+
+
+
+    .robotic-seperator{
+        background-image: url(https://its-london.s3-eu-west-1.amazonaws.com/themes/STIHL/imow-background.jpg);
+        background-attachment: fixed;
+        height: auto;
+        padding: 2rem 0;
+        width: 100%;
+        max-width: 100%;
+
+        hr{
+            border-color: #fff;
+        }
+
+        p{
+            color: #fff;
+        }
+
+        .align-center{
+            align-items: center;
+        }
+
+    }
+
+
+    .why-imow{
+        h4{
+            font-weight: 600;
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                font-size: 1.5rem;
+            }
+        }
+
+        p{
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .cell{
+            text-align: center;
+            img{
+                margin-bottom: 1rem;
+            }
+        }
+
+        .button{
+            margin: 1rem 0;
+        }
+    }
+
+
+}

@@ -1,0 +1,130 @@
+#makita{
+    background: linear-gradient(
+        0deg
+        ,#00778e,#0b7e8c);
+        padding: 5rem 0;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            padding: 2rem 0;
+        }
+
+    h1, h2, p, a{
+        color: #fff;
+    }
+
+    h1, h2{
+       @include openSansExtraBold;
+       text-transform: uppercase;
+    }
+
+    h2{
+        margin-top: 2rem;
+    }
+
+    p, a{
+        @include openSansBold;
+        font-size: 1.5rem;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobile) {
+            font-size: 1rem;
+        }
+    }
+
+    .header{
+        img{
+            margin: 10px auto;
+            width: 100%;
+            max-width: 480px;
+            display: block; 
+        }
+    } 
+    
+    .cell{
+        margin-bottom: 1rem;
+    }
+
+    .makita-product-regions{
+
+
+        .bosch-image-heading{
+            @include flexCenter;
+
+            .heading-logo{
+                width: 13.5rem;
+                margin-right: 1rem;
+
+                @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                    width: 11rem;
+                    margin-bottom: 5px;
+                }
+            }
+
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                flex-direction: column;
+            }
+        }
+
+        .prod-region-item-small{
+            @media (min-width: $mobileSmall) and (max-width: $mobile) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .code-ref-container{
+            span{
+                @include openSansBold;
+            }
+        }
+
+        .prod-region-title{
+            margin-bottom: 1rem;
+            @include openSansRegular;
+        }
+
+        .pricing-container{
+            @include flexColumnCenter;
+
+            .product-region-status{
+                span{
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: .975rem;
+                    text-transform: uppercase;
+                    display: block;
+                    text-align: center;
+                    margin-bottom: .5rem;
+                }
+
+                .web-status-IN-STK{
+                    span{color: #1ca902;}
+                }
+                .web-status-AVAIL-SOON, .web-status-PRE-ORDER{
+                    span{color: orange;}
+                }
+                .web-status-NO-STK{
+                    span{color: red;}
+                }
+            }
+            .product-region-was{
+                span{
+                    text-decoration: line-through;
+                }
+            }
+            .product-region-exVAT{
+                span{
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+            }
+            .product-region-incVAT{}
+        }
+
+        .button{
+            background-color: #0b7e8c;
+            padding: .5rem 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+    }
+}
